@@ -635,14 +635,14 @@ footer{border-top:1px solid var(--panel-border);}
     font-size: 11px;
     color: #111827;
 
-    /* Transparent white glass */
+    /* Transparent white liquid glass */
     background: rgba(255, 255, 255, 0.65) !important;
 
     /* Glass blur */
     backdrop-filter: blur(14px) saturate(160%) !important;
     -webkit-backdrop-filter: blur(14px) saturate(160%) !important;
 
-    /* Subtle glass border */
+    /* Glass border */
     border: 1px solid rgba(255, 255, 255, 0.8) !important;
 
     border-radius: 10px;
@@ -652,13 +652,19 @@ footer{border-top:1px solid var(--panel-border);}
     align-items: center;
     gap: 8px;
 
-    /* Liquid glass highlight + shadow */
+    /* Liquid glass highlight and shadow */
     box-shadow:
         inset 0 1px 0 rgba(255, 255, 255, 0.9),
         inset 0 0 0 1px rgba(255, 255, 255, 0.25),
         0 8px 24px rgba(20, 21, 40, 0.18);
+
+    transition:
+        background 0.3s ease,
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
 }
 
+/* Small status indicator */
 .hero-photo-tag .pulse {
     width: 6px;
     height: 6px;
@@ -666,4 +672,16 @@ footer{border-top:1px solid var(--panel-border);}
     background: var(--teal);
     animation: pulse 2s infinite;
     flex-shrink: 0;
+}
+
+/* Optional hover effect */
+.hero-photo-tag:hover {
+    background: rgba(255, 255, 255, 0.75) !important;
+
+    box-shadow:
+        inset 0 1px 0 rgba(255, 255, 255, 0.95),
+        inset 0 0 0 1px rgba(255, 255, 255, 0.3),
+        0 12px 30px rgba(20, 21, 40, 0.22);
+
+    transform: translateY(-2px);
 }
