@@ -157,8 +157,8 @@ nav.wrap{display:flex;align-items:center;justify-content:space-between;height:72
 .hero-photo{
   position:relative;width:min(320px,72vw);aspect-ratio:1/1.08;border-radius:26px;overflow:hidden;
   border:1px solid rgba(255,255,255,0.16);
-  background:rgba(255,255,255,0.04);
-  box-shadow:inset 0 1px 0 rgba(255,255,255,0.3), 0 30px 60px -20px rgba(255, 255, 255, 0.6);
+  background:rgba(184, 182, 182, 0.74);
+  box-shadow:inset 0 1px 0 rgba(13, 13, 13, 0.3), 0 30px 60px -20px rgba(43, 43, 43, 0.6);
 }
 .hero-photo::before{
   content:"";position:absolute;inset:-1px;border-radius:22px;padding:1px;
